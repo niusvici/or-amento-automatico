@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <select name="" id="linguagemorigem">
+            <option value="embranco">Escolha uma lingua</option>
+            <option onclick="escolheulinguagem()" value="portugues">Português</option>
+            <option value="espanhol">Espanhol</option>
+            <option value="ingles">Inglês</option>
+        </select>
+        <select name="" id="linguagem">
+            <option value="embranco" selected>Escolha uma lingua</option>
+            <option value="portugues"  >Português</option>
+        </select>
+        <form action="">
+            <div>
+                Numero de palavras
+                <input type="number" name="npalavras" id="npalavras" class="inputUser"> 
+                <label for="npalavras"></label>
+            </div>
+        </form>
+        <button id="enviar" onclick="atualizoulinguagemorigem(),atualizoulinguagem(),numerodepalavras(), calcularvalor()"> Enviar</button>
+        
+        <p >
+            Valor(R$)
+            <h4 id="calculo"></h4>
+        </p>
+    </div>
+    
+</body>
+<script src="./script.js"></script>
+</html>
